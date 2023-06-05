@@ -1,0 +1,31 @@
+### SELECT INDEX
+GET  http://127.0.0.1:8000/api/usuario HTTP/1.1
+Accept: application/json
+
+### SHOW
+GET  http://127.0.0.1:8000/api/usuario/3 HTTP/1.1
+Accept: application/json
+
+### STORE
+POST http://127.0.0.1:8000/api/usuario/ HTTP/1.1
+Accept: application/json
+Content-type: application/json
+
+{
+    "name": "user2",
+    "email": "user@gmail.com",
+    "password": "1234"
+}
+### UPDATE 
+PUT  http://127.0.0.1:8000/api/usuario/1 HTTP/1.1
+Accept: application/json
+Content-type: application/json
+
+{
+    "nombre": "usuariomodificado",
+    "detalle": "detalle modificado"
+}
+### DESTROY 
+DELETE   http://127.0.0.1:8000/api/usuario/1 HTTP/1.1
+Accept: application/json
+ 

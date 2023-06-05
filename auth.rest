@@ -7,7 +7,8 @@ Content-type: application/json
     "email": "userTest@gmail.com",
     "password": "123456789"
 }
-### AUTH 
+
+
 POST  http://127.0.0.1:8000/api/v1/auth/login HTTP/1.1
 Accept: application/json
 Content-type: application/json
@@ -29,5 +30,5 @@ Authorization: : Bearer 1|g857XNIIJDLfZDtlmOS2Ef4Yo2xX8RvVaVdrvokP
 }
 ### LOGOUT
 POST  http://127.0.0.1:8000/api/v1/auth/salir  
- Accept: application/json
- Authorization: : Bearer 1|g857XNIIJDLfZDtlmOS2Ef4Yo2xX8RvVaVdrvokP
+Accept: application/json
+Authorization: : Bearer 1|g857XNIIJDLfZDtlmOS2Ef4Yo2xX8RvVaVdrvokP

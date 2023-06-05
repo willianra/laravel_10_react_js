@@ -1,0 +1,30 @@
+### SELECT INDEX
+GET  http://127.0.0.1:8000/api/categoria HTTP/1.1
+Accept: application/json
+
+### SHOW
+GET  http://127.0.0.1:8000/api/categoria/1 HTTP/1.1
+Accept: application/json
+
+### STORE
+POST http://127.0.0.1:8000/api/categoria/ HTTP/1.1
+Accept: application/json
+Content-type: application/json
+
+{
+    "nombre": "juguestes",
+    "detalle": "juguestes para niños"
+}
+### UPDATE 
+PUT  http://127.0.0.1:8000/api/categoria/1 HTTP/1.1
+Accept: application/json
+Content-type: application/json
+
+{
+    "nombre": "categoriamodificado",
+    "detalle": "detalle modificado"
+}
+### DESTROY 
+DELETE   http://127.0.0.1:8000/api/categoria/1 HTTP/1.1
+Accept: application/json
+ 

@@ -34,7 +34,7 @@ class AuthController extends Controller
     public function func_register(Request $request)
     {
 
-        return $request->ip();
+        // return $request->ip();
         //validar 
         $request->validate([
             "name" => "required",
